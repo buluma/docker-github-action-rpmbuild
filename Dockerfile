@@ -1,6 +1,6 @@
 FROM centos:7
 
-LABEL maintainer="Michael Buluma"
+LABEL maintainer="Michael Buluma <me@buluma.me.ke>"
 LABEL build_date="2022-02-12"
 
 WORKDIR /github/workspace
