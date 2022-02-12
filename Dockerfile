@@ -1,4 +1,4 @@
-FROM centos:7
+FROM fedora:31
 
 LABEL maintainer="Michael Buluma"
 LABEL build_date="2022-02-12"
