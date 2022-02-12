@@ -1,4 +1,4 @@
-FROM centos:8
+FROM buluma/docker-rockylinux8-ansible
 
 LABEL maintainer="Michael Buluma"
 LABEL build_date="2022-02-12"
