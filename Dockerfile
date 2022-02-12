@@ -1,12 +1,12 @@
-FROM centos:7
+FROM buluma/docker-rockylinux8-ansible
 
-LABEL maintainer="Michael Buluma"
-LABEL build_date="2022-02-12"
+LABEL maintainer="Robert de Bock <robert@meinit.nl>"
+LABEL build_date="2022-01-03"
 
 WORKDIR /github/workspace
 
-RUN yum install -y rpmdevtools yum-utils spectool epel-release && \
-    yum clean all && \
+RUN dnf install -y rpmdevtools dnf-utils dnf-utils && \
+    dnf clean all && \
     rm -r -f /var/cache/*
 
 CMD spectool --get-files --all SPECS/*.spec && \
