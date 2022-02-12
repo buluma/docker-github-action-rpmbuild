@@ -5,7 +5,7 @@ LABEL build_date="2022-02-12"
 
 WORKDIR /github/workspace
 
-RUN yum install dnf -y
+RUN yum install epel-release dnf -y
 
 RUN dnf install -y rpmdevtools spectool dnf-utils && \
     dnf clean all && \
