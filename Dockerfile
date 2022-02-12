@@ -7,7 +7,7 @@ WORKDIR /github/workspace
 
 RUN yum install dnf -y
 
-RUN dnf install -y rpmdevtools dnf-utils spectool dnf-utils && \
+RUN dnf install -y rpmdevtools spectool dnf-utils && \
     dnf clean all && \
     rm -r -f /var/cache/*
 
