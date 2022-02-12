@@ -1,7 +1,7 @@
 FROM buluma/docker-rockylinux8-ansible
 
-LABEL maintainer="Robert de Bock <robert@meinit.nl>"
-LABEL build_date="2022-01-03"
+LABEL maintainer="Michael Buluma <me@buluma.co.ke>"
+LABEL build_date="2022-02-12"
 
 WORKDIR /github/workspace
 
