@@ -1,13 +1,11 @@
 FROM centos:7
 
-LABEL maintainer="Michael Buluma <ne@buluma.co.ke>"
+LABEL maintainer="Michael Buluma"
 LABEL build_date="2022-02-12"
 
 WORKDIR /github/workspace
 
-# RUN yum install epel-release dnf -y
-
-RUN yum install -y rpmdevtools spectool yum-utils && \
+RUN yum install -y rpmdevtools yum-utils spectool epel-release && \
     yum clean all && \
     rm -r -f /var/cache/*
 
