@@ -5,6 +5,8 @@ LABEL build_date="2022-02-12"
 
 WORKDIR /github/workspace
 
+RUN yum install dnf
+
 RUN dnf install -y rpmdevtools dnf-utils spectool dnf-utils && \
     dnf clean all && \
     rm -r -f /var/cache/*
